@@ -7,6 +7,9 @@ document.body.append(divBoxTextArea);
 let divKeyBoard = document.createElement('div');
 divKeyBoard.id = "keyBoard";
 document.body.append(divKeyBoard);
+let pOS = document.createElement('p');
+pOS.className="pOS";
+document.body.append(pOS);
 
 const keyBoard =[192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 189, 187, 8, 
     9, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 13, 
@@ -76,3 +79,4 @@ document.addEventListener("keydown", function(event) {
 document.addEventListener("keyup", function(event) {
     document.querySelector('#keyBoard .key[data="'+event.which+'"]').classList.remove('active');
 })
+document.querySelector(".pOS").innerHTML="Клавиатура создана в операционной системе Windows";

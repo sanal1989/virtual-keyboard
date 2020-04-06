@@ -32,3 +32,6 @@
 .upperCase{
     text-transform:uppercase;
 }
+p{
+    margin-left: 300px;
+}
